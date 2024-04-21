@@ -15,31 +15,31 @@ inconsistent data values if necessary. You can use sklearn for this.
 
 ## 1.2 Model Building from Scratch 
 1. Create a Multinomial Logistic Regression model from scratch and Use
-cross entropy loss as loss function and Gradient descent as the optimization
-algorithm (write seperate methods for these).
+cross-entropy loss as the loss function and Gradient descent as the optimization
+algorithm (write separate methods for these).
 2. Train the model, use sklearn classification report and print metrics on the
-validation set while training. Also, report loss and accuracy on train set.
+validation set while training. Also, report loss and accuracy on the train set.
 1.3 Hyperparameter Tuning and Evaluation [15 marks]
 1. Use your validation set and W&B logging to fine-tune the hyperparameters
-( learning rate , epochs) for optimal results.
-2. Evaluate your model on test dataset and print sklearn classification report.
+( learning rate, epochs) for optimal results.
+2. Evaluate your model on the test dataset and print sklearn classification report.
    
-# 2 Multi Layer Perceptron Classification
+# 2 Multi-Layer Perceptron Classification
 In this part, you are required to implement MLP classification from scratch
-using numpy, pandas and experiment with various activation functions and optimization techniques, evaluate the model’s performance, and draw comparisons
+using numpy, and pandas and experiment with various activation functions and optimization techniques, evaluate the model’s performance, and draw comparisons
 with the previously implemented multinomial logistic regression.
 Use the same dataset as Task 1
 ## 2.1 Model Building from Scratch 
 Build an MLP classifier class with the following specifications:
-1. Create a class where you can modify and access the learning rate, activation function, optimisers, number of hidden layers and neurons.
-2. Implement methods for forward propagation, backpropagation, and training.
+1. Create a class where you can modify and access the learning rate, activation function, optimisers, number of hidden layers and neurons.
+2. Implement methods for forward propagation, backpropagation, and training.
 3. Different activation functions introduce non-linearity to the model and
 affect the learning process. Implement the Sigmoid, Tanh, and ReLU
 activation functions and make them easily interchangeable within your
 MLP framework.
 4. Optimization techniques dictate how the neural network updates its weights
 during training. Implement methods for the Stochastic Gradient Descent
-(SGD), Batch Gradient Descent, and Mini-Batch Gradient Descent algorithms from scratch, ensuring that they can be employed within your MLP
+(SGD), Batch Gradient Descent, and Mini-Batch Gradient Descent algorithms from scratch, ensuring that they can be employed within your MLP
 architecture.
 
 ## 2.2 Model Training & Hyperparameter Tuning using W&B
@@ -78,20 +78,20 @@ using W&B.
 
 (b) Report metrics: accuracy, f-1 score, precision, and recall.
 (c) You have to report the scores(ordered) for all the combinations of :
-• Activation functions : sigmoid, tanh and ReLU (implemented
+• Activation functions: sigmoid, tanh and ReLU (implemented
 from scratch)
-• Optimizers : SGD, batch gradient descent and mini-batch gradient descent (implemented from scratch).
+• Optimizers: SGD, batch gradient descent and mini-batch gradient descent (implemented from scratch).
 (d) Tune your model on various hyperparameters, such as learning rate,
 epochs, and hidden layer neurons.
-• Plot the trend of accuracy scores with change in these hyperparameters.
+• Plot the trend of accuracy scores with changes in these hyperparameters.
 • Report the parameters for the best model that you get (for the
 various values you trained the model on).
-• Report the scores mentioned in Point b for all values of hyperparameters in a table.
-3. Evaluate your model on the test set and report accuracy, f1 score, precision, and recall.
+• Report the scores mentioned in Point b for all values of hyperparameters in a table.
+3. Evaluate your model on the test set and report accuracy, f1 score, precision, and recall.
 
 # 3 Multilayer Perceptron Regression
 In this task, you will implement a Multi-layer Perceptron (MLP) for regression
-from scratch, and integrate Weights & Biases (W&B) for tracking and tuning. Using the Boston Housing dataset, you have to predict housing prices
+from scratch, and integrate Weights & Biases (W&B) for tracking and tuning. Using the Boston Housing dataset, you have to predict housing prices
 while following standard machine learning practices. In this dataset, the column
 MEDV gives the median value of owner-occupied homes in $1000’s.
 ## 3.1 Data Preprocessing 
@@ -104,10 +104,10 @@ entire dataset. You are allowed to use standard libraries like Matplotlib.
 inconsistent data values if necessary.
 ## 3.2 MLP Regression Implementation from Scratch
 In this part, you are required to implement MLP regression from scratch using
-numpy, pandas and experiment with various activation functions and optimization techniques, and evaluate the model’s performance.
+numpy, pandas and experiment with various activation functions and optimization techniques, and evaluate the model’s performance.
 5
-1. Create a class where you can modify and access the learning rate, activation function, optimisers, number of hidden layers and neurons.
-2. Implement methods for forward propagation, backpropagation, and training.
+1. Create a class where you can modify and access the learning rate, activation function, optimisers, number of hidden layers and neurons.
+2. Implement methods for forward propagation, backpropagation, and training.
 3. Implement the Sigmoid, Tanh, and ReLU activation functions and make
 them easily interchangeable within your MLP framework.
 4. Implement methods for the Stochastic Gradient Descent (SGD), Batch
@@ -118,9 +118,9 @@ ensuring that they can be employed within your MLP architecture.
 W&B.
 2. Report metrics: MSE, RMSE, R-squared.
 3. You have to report the scores(ordered) for all the combinations of :
-• Activation functions : sigmoid, tanh and ReLU (implemented from
+• Activation functions: sigmoid, tanh and ReLU (implemented from
 scratch)
-• Optimizers : SGD, batch gradient descent and mini-batch gradient
+• Optimizers: SGD, batch gradient descent and mini-batch gradient
 descent (implemented from scratch).
 4. Tune your model on various hyperparameters, such as learning rate, epochs,
 and hidden layer neurons.
